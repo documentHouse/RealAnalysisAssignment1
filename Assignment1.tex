@@ -18,9 +18,9 @@
 %\renewcommand{\textfraction}{0.07}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{Real Analysis $\mathbb{I}$: \\ Assignment \#1}
+\title{Real Analysis $\mathbb{I}$: \\ Assignment \,1 (Needs Revision)}
 \author{Andrew Rickert}
-\date{Started: November 19, 2010 \\ \hspace{1pt} Ended: November ??, 2010}                                           % Activate to display a given date or no date
+\date{Started: November 19, 2010 \\ \hspace{1pt} Ended: November 29, 2010}                                           % Activate to display a given date or no date
 
 \begin{document}
 \maketitle
@@ -81,7 +81,9 @@ $\gamma < \alpha \le sup B$ such that $\alpha \in$ B which means $\alpha \in$ A 
 \rule{500pt}{1pt}\\
 \end{flushleft} 
 
+If we assume that we can define an order on $\mathbb{C}$ then we can use the order axioms to show as in proposition 1.18(d) that $x^2 > 0$ for $x \neq 0$. This implies that $1 > 0$ so $0 = -1 + 1 > -1 + 0 = -1 \implies -1 < 0$.
 
+If we let $z = i = (0,1)$ then we see from the definition of multiplication in $\mathbb{C}$ that $z^2 = (0,1)\cdot(0,1) = (-1,0) = -1$. By the previous paragraph $z^2 > 0$ if we assume that we can define order but since $z^2 = -1 < 0$ we have a contradiction so our assumption that we can define an order on $\mathbb{C}$ is mistaken.
 
 \vspace{15pt}
 \begin{flushleft} 
@@ -110,16 +112,33 @@ Let E = \{$z \in \mathbb{C} | z = a + bi \; \text{where} \; a \in (0,1), \; b \i
 \rule{500pt}{1pt}\\
 \end{flushleft} 
 
-\vspace{15pt}
-\begin{flushleft} 
-\textbf{Class 18.100B} - Extra Problem 1\\
-\rule{500pt}{1pt}\\
-\end{flushleft} 
+We proceed using the dot product as an expression of the definition of the norm:
+\begin{eqnarray*}
+ |\textbf{x} + \textbf{y}|^2 + |\textbf{x} - \textbf{y}|^2 & = & (\textbf{x} + \textbf{y}) \cdot (\textbf{x} + \textbf{y})  +  (\textbf{x} - \textbf{y}) \cdot (\textbf{x} - \textbf{y})    \\
+   &=& \textbf{x}\cdot \textbf{x} + 2 \, \textbf{x}\cdot \textbf{y} + \textbf{y}\cdot \textbf{y} + \textbf{x}\cdot \textbf{x} - 2 \, \textbf{x}\cdot \textbf{y} + \textbf{y}\cdot \textbf{y}  \\
+   &=& 2\, \textbf{x}\cdot \textbf{x} + 2\, \textbf{y}\cdot \textbf{y} \\
+   &=& 2\,|\textbf{x}|^2 + 2\,|\textbf{y}|^2
+\end{eqnarray*}
 
-\vspace{15pt}
-\begin{flushleft} 
-\textbf{Class 18.100B} - Extra Problem 2\\
-\rule{500pt}{1pt}\\
-\end{flushleft} 
+The geometric interpretation of this formula is to note that $\textbf{x} + \textbf{y}$ represents one diagonal and $\textbf{x} - \textbf{y}$ represents the other diagonal. The formula then says that the sum of the squares of the lengths of the diagonals is equal to the sum of the squares of the four sides of the parallelogram.
+
+%\begin{eqnarry)
+%|x + y|^2 + |x - y|^2 & = & (\textbf{x} + \textbf{y}) \centerdot (\textbf{x} + \textbf{y}) \\
+%a & = & b \\
+%b & = & c
+%\end{eqnarry}
+
+
+%\vspace{15pt}
+%\begin{flushleft} 
+%\textbf{Class 18.100B} - Extra Problem 1\\
+%\rule{500pt}{1pt}\\
+%\end{flushleft} 
+
+%\vspace{15pt}
+%\begin{flushleft} 
+%\textbf{Class 18.100B} - Extra Problem 2\\
+%\rule{500pt}{1pt}\\
+%\end{flushleft} 
 
 \end{document}  
